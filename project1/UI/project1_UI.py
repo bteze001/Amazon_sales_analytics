@@ -1,0 +1,349 @@
+"""
+Amazon Sales Analytics - Modular Query Runner
+Reads SQL files and runs queries interactively
+"""
+
+import os
+import mysql.connector
+from pathlib import Path
+from tabulate import tabulate
+from rich.console import Console
+from rich.panel import Panel
+from rich.prompt import Prompt, Confirm
+import time
+
+console = Console()
+
+
+
+def load_queries_with_labels(file_path):
+    """
+    Parse SQL file correctly handling:
+    - Section headers (-- 1.1: Query name)
+    - Multi-line comments (/* ... */)
+    - Query body (SELECT ...)
+    """
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    queries = []
+    lines = content.split('\n')
+    
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        
+        # Look for query labels (e.g., "-- 1.1: Query description")
+        if line.startswith('--') and ':' in line and any(c.isdigit() for c in line):
+            # Extract label
+            label = line.lstrip('- ').strip()
+            
+            # Skip ahead to find the actual SELECT
+            i += 1
+            query_lines = []
+            in_multiline_comment = False
+            found_select = False
+            
+            while i < len(lines):
+                current_line = lines[i]
+                stripped = current_line.strip()
+                
+                # Handle multi-line comments
+                if '/*' in stripped:
+                    in_multiline_comment = True
+                if '*/' in stripped:
+                    in_multiline_comment = False
+                    i += 1
+                    continue
+                
+                # Skip single-line comments and empty lines
+                if in_multiline_comment or stripped.startswith('--') or not stripped:
+                    i += 1
+                    continue
+                
+                # We've found actual SQL code
+                if not found_select:
+                    # Check if this line starts a query
+                    if any(keyword in stripped.upper() for keyword in ['SELECT', 'WITH', 'INSERT', 'UPDATE', 'DELETE']):
+                        found_select = True
+                        query_lines.append(current_line)
+                    i += 1
+                else:
+                    # We're inside a query
+                    query_lines.append(current_line)
+                    
+                    # Check if query ends (semicolon)
+                    if stripped.endswith(';'):
+                        # Query complete
+                        query_text = '\n'.join(query_lines).strip()
+                        if 'SELECT' in query_text.upper():
+                            queries.append((label, query_text))
+                        break
+                    
+                    # Check if we've hit the next label
+                    if stripped.startswith('--') and ':' in stripped and any(c.isdigit() for c in stripped):
+                        # Next query label found, save current query
+                        query_text = '\n'.join(query_lines).strip()
+                        if 'SELECT' in query_text.upper():
+                            queries.append((label, query_text))
+                        i -= 1  # Back up one line to reprocess the label
+                        break
+                    
+                    # Check for section divider
+                    if '=' * 10 in stripped:
+                        # End of section, save query
+                        query_text = '\n'.join(query_lines).strip()
+                        if query_text and 'SELECT' in query_text.upper():
+                            queries.append((label, query_text))
+                        break
+                    
+                    i += 1
+            
+            # Handle case where file ends without semicolon
+            if found_select and query_lines and i >= len(lines):
+                query_text = '\n'.join(query_lines).strip()
+                if 'SELECT' in query_text.upper():
+                    queries.append((label, query_text))
+        
+        i += 1
+    
+    # Debug: Print what was found
+    print(f"\n[DEBUG] Found {len(queries)} queries:")
+    for idx, (label, query) in enumerate(queries, 1):
+        query_preview = query[:100].replace('\n', ' ')
+        print(f"  {idx}. {label}")
+        print(f"     -> {query_preview}...")
+    print()
+    
+    return queries
+
+class ModularQueryRunner:
+    """Interactive SQL Query Runner"""
+    
+    def __init__(self, db_config, sql_file_path):
+        self.db_config = db_config
+        self.sql_file_path = sql_file_path
+        self.queries = []
+        self.conn = None
+        self.cursor = None
+        
+        # Load queries from file
+        try:
+            self.queries = load_queries_with_labels(sql_file_path)
+            if not self.queries:
+                console.print(f"[yellow]Warning: No queries found in {Path(sql_file_path).name}[/yellow]")
+            else:
+                console.print(f"[green]✓ Loaded {len(self.queries)} queries from {Path(sql_file_path).name}[/green]")
+        except Exception as e:
+            console.print(f"[red]Error loading queries: {e}[/red]")
+            raise
+        
+        # Connect to database
+        try:
+            self.conn = mysql.connector.connect(**db_config)
+            self.cursor = self.conn.cursor()
+            console.print("[green]✓ Connected to database[/green]\n")
+        except mysql.connector.Error as e:
+            console.print(f"[red]✗ Database connection failed: {e}[/red]")
+            raise
+
+    def run_query(self, sql, label):
+        """Execute a single query and display results"""
+        try:
+            console.print(f"\n[bold cyan]Executing: {label}[/bold cyan]")
+            
+            start_time = time.time()
+            
+            # Execute query
+            self.cursor.execute(sql)
+            rows = self.cursor.fetchall()
+            
+            elapsed = time.time() - start_time
+            
+            # Display results
+            if self.cursor.description:
+                headers = [desc[0] for desc in self.cursor.description]
+                
+                if rows:
+                    # Limit display to 50 rows for readability
+                    display_rows = rows[:50]
+                    console.print(tabulate(display_rows, headers=headers, tablefmt="fancy_grid"))
+                    
+                    # Show summary
+                    if len(rows) > 50:
+                        console.print(f"\n[dim]Showing 50 of {len(rows)} rows[/dim]")
+                    console.print(f"[dim]Total: {len(rows)} rows | Time: {elapsed:.2f}s[/dim]")
+                else:
+                    console.print("[yellow]No results returned[/yellow]")
+            else:
+                console.print("[green]Query executed successfully (no results to display)[/green]")
+            
+            return True
+            
+        except mysql.connector.Error as e:
+            console.print(f"[red]MySQL Error: {e}[/red]")
+            return False
+        except Exception as e:
+            console.print(f"[red]Error: {e}[/red]")
+            return False
+
+    def display_query_menu(self):
+        """Display available queries"""
+        console.clear()
+        
+        console.print(Panel.fit(
+            f"[bold blue]📊 {Path(self.sql_file_path).stem.replace('_', ' ').title()}[/bold blue]\n"
+            f"[dim]{len(self.queries)} queries available[/dim]",
+            border_style="blue"
+        ))
+        
+        console.print("\n[bold]Available Queries:[/bold]")
+        for i, (label, _) in enumerate(self.queries, 1):
+            console.print(f"  [cyan]{i:2d}.[/cyan] {label}")
+        
+        console.print(f"\n  [cyan] A.[/cyan] Run ALL queries")
+        console.print(f"  [cyan] B.[/cyan] Back to main menu")
+        console.print(f"  [cyan] 0.[/cyan] Exit")
+
+    def run(self):
+        """Main query execution loop"""
+        while True:
+            self.display_query_menu()
+            
+            choice = Prompt.ask("\n[bold]Select a query[/bold]").upper()
+            
+            if choice == "0":
+                console.print("\n[green]Goodbye! 👋[/green]")
+                break
+            elif choice == "B":
+                return  # Go back to main menu
+            elif choice == "A":
+                # Run all queries
+                console.print("\n[bold yellow]Running all queries...[/bold yellow]")
+                for i, (label, sql) in enumerate(self.queries, 1):
+                    console.print(f"\n[bold]Query {i}/{len(self.queries)}[/bold]")
+                    self.run_query(sql, label)
+                    
+                    if i < len(self.queries):
+                        if not Confirm.ask("\n[dim]Continue to next query?[/dim]", default=True):
+                            break
+                
+                input("\n[Press Enter to return to menu...]")
+            else:
+                try:
+                    idx = int(choice) - 1
+                    if 0 <= idx < len(self.queries):
+                        label, sql = self.queries[idx]
+                        self.run_query(sql, label)
+                        input("\n[Press Enter to continue...]")
+                    else:
+                        console.print("[red]Invalid selection[/red]")
+                        time.sleep(1)
+                except ValueError:
+                    console.print("[red]Please enter a number[/red]")
+                    time.sleep(1)
+        
+        # Cleanup
+        self.close()
+
+    def close(self):
+        """Close database connections"""
+        if self.cursor:
+            self.cursor.close()
+        if self.conn:
+            self.conn.close()
+
+
+def get_sql_file_path(choice, base_dir):
+    """
+    Get SQL file path based on user choice
+    Uses relative paths for portability
+    """
+    # Map choices to SQL files
+    sql_files = {
+        "1": "01_data_summary.sql",
+        "2": "02_product_performance.sql",
+        "3": "03_category_analysis.sql",
+        "4": "04_rating_analysis.sql",
+        "5": "05_comparative_analysis.sql"
+    }
+    
+    if choice not in sql_files:
+        return None
+    
+    # Construct path relative to script location
+    sql_file = base_dir / "sql" / sql_files[choice]
+    
+    return sql_file if sql_file.exists() else None
+
+
+def display_main_menu():
+    """Display main analysis selection menu"""
+    console.clear()
+    
+    console.print("""
+    ╔════════════════════════════════════════════════╗
+    ║      🛒 AMAZON SALES ANALYTICS DASHBOARD 🛒   ║
+    ║           Modular SQL Query Runner            ║
+    ╚════════════════════════════════════════════════╝
+    """, style="bold blue")
+    
+    console.print("[bold cyan]Which Analysis do you want to perform?[/bold cyan]\n")
+    console.print("  [cyan]1.[/cyan] Data Summary")
+    console.print("  [cyan]2.[/cyan] Product Performance Analysis")
+    console.print("  [cyan]3.[/cyan] Category Analysis")
+    console.print("  [cyan]4.[/cyan] Rating Analysis")
+    console.print("  [cyan]5.[/cyan] Comparative Analysis")
+    console.print("  [cyan]0.[/cyan] Exit\n")
+
+
+def main():
+    """Entry point"""
+    
+    # Database configuration
+    db_config = {
+        'host': 'localhost',
+        'user': 'root',
+        'password': 'pass1234@',  # UPDATE THIS
+        'database': 'amazonSales'
+    }
+    
+    # Get base directory (where this script is located)
+    # Assumes script is in UI/ folder and SQL files are in sql/ folder
+    script_dir = Path(__file__).parent
+    base_dir = script_dir.parent  # Go up one level to project root
+    
+    while True:
+        display_main_menu()
+        
+        choice = Prompt.ask("[bold]Your choice[/bold]", choices=["0", "1", "2", "3", "4", "5"])
+        
+        if choice == "0":
+            console.print("\n[green]Thank you for using Amazon Sales Analytics! 👋[/green]\n")
+            break
+        
+        # Get SQL file path
+        sql_file = get_sql_file_path(choice, base_dir)
+        
+        if not sql_file:
+            console.print(f"[red]SQL file not found![/red]")
+            console.print(f"[yellow]Looking for files in: {base_dir / 'sql'}[/yellow]")
+            input("\n[Press Enter to continue...]")
+            continue
+        
+        # Run queries from selected file
+        try:
+            runner = ModularQueryRunner(db_config, sql_file)
+            runner.run()
+        except Exception as e:
+            console.print(f"[red]Error initializing runner: {e}[/red]")
+            input("\n[Press Enter to continue...]")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        console.print("\n[yellow]Program interrupted by user[/yellow]")
+    except Exception as e:
+        console.print(f"\n[red]Unexpected error: {e}[/red]")
