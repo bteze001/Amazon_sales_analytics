@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS reviews(
 
 /* Method 2: Loading file using python */
 
-LOAD DATA LOCAL INFILE '/Users/bezatezera/Desktop/Data/amazonSales/data/processed/cleaned_products.csv'
+LOAD DATA LOCAL INFILE '../Amazon_sales_analytics/data/processed/cleaned_products.csv'
 INTO TABLE products
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
@@ -89,7 +89,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (product_id, product_name, category, discounted_price, actual_price, discount_percentage, about_product, img_link, product_link, rating, rating_count);
 
-LOAD DATA LOCAL INFILE '/Users/bezatezera/Desktop/Data/amazonSales/data/processed/cleaned_users.csv'
+LOAD DATA LOCAL INFILE '../Amazon_sales_analytics/data/processed/cleaned_users.csv'
 INTO TABLE users
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
@@ -97,7 +97,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (user_id, user_name);
 
-LOAD DATA LOCAL INFILE '/Users/bezatezera/Desktop/Data/amazonSales/data/processed/cleaned_reviews.csv'
+LOAD DATA LOCAL INFILE '../Amazon_sales_analytics/data/processed/cleaned_reviews.csv'
 INTO TABLE reviews
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'

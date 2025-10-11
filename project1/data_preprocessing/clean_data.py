@@ -7,7 +7,7 @@ def split_data_into_tables():
 
     print("Step 1: Splitting data into normalized tables...")
 
-    df = pd.read_csv("../data/raw/amazon.csv")
+    df = pd.read_csv("/Users/bezatezera/Desktop/Data/amazonSales/Amazon_sales_analytics/data/raw/amazon.csv")
 
     products = df[['product_id', 'product_name', 'category', 'discounted_price', 'actual_price', 
                'discount_percentage', 'about_product', 'img_link', 'product_link', 'rating', 
@@ -80,20 +80,24 @@ def clean_special_characters(filename):
 
     return cleaned_filename
 
-def clean_numeric_columns(filename):
+def clean_numeric_columns(filename, rupes_to_usd=0.012):
 
     print("Step 3: Cleaning numeric columns in {filename}...")
 
     df = pd.read_csv(filename)
 
-    def clean_price_rating_data(value):
+    def clean_price_rating_data(value, convert_to_usd = False):
         if pd.isna(value):
             return None
 
-        clean_value = str(value).replace(',','')
+        clean_value = str(value).replace(',','').replace('₹', '').strip()
 
         try:
-            return float(clean_value)
+            numeric_value = float(clean_value)
+            if convert_to_usd:
+                numeric_value *= rupes_to_usd
+            return round(numeric_value, 2)
+        
         except ValueError:
             print(f"Could not conver price / rating: {value}")
             return None
@@ -103,7 +107,7 @@ def clean_numeric_columns(filename):
         if pd.isna(value):
             return None
         
-        clean_value = str(value).replace('%','')
+        clean_value = str(value).replace('%','').strip()
 
         try:
             return float(clean_value)
@@ -112,9 +116,9 @@ def clean_numeric_columns(filename):
             return None
         
     if 'discounted_price' in df.columns:
-        df['discounted_price'] = df['discounted_price'].apply(clean_price_rating_data)
+        df['discounted_price'] = df['discounted_price'].apply(lambda x: clean_price_rating_data(x, convert_to_usd=True))
     if 'actual_price' in df.columns:
-        df['actual_price'] = df['actual_price'].apply(clean_price_rating_data)
+        df['actual_price'] = df['actual_price'].apply(lambda x: clean_price_rating_data(x, convert_to_usd= True))
     if 'rating_count' in df.columns:
         df['rating_count'] = df['rating_count'].apply(clean_price_rating_data)
 
