@@ -14,6 +14,7 @@ SELECT
     ROUND(AVG(rating), 2) as avg_rating,
     ROUND(MIN(rating), 2) as min_rating,
     ROUND(MAX(rating), 2) as max_rating,
+    ROUND(STDDEV(rating), 2) as std_dev,
     COUNT(CASE WHEN rating >= 4.5 THEN 1 END) as highly_rated_count
 FROM products 
 WHERE rating IS NOT NULL;

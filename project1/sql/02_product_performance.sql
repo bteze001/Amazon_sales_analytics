@@ -289,6 +289,8 @@ Business Value: Great for budget-conscious customers
 SELECT 
     product_name,
     rating,
+    rating_count,
+    SUBSTRING_INDEX(category, '|', 1) as main_category,
     CONCAT('$', ROUND(discounted_price, 2)) as price,
     ROUND(rating/discounted_price, 2) as value_score
 FROM products 
@@ -474,7 +476,7 @@ SELECT
 FROM products
 WHERE rating_count >= 20
 ORDER BY rating DESC
-LIMIT (SELECT CEIL(COUNT(*) * 0.10) FROM products WHERE rating_count >= 20);
+LIMIT 10;
 
 -- 8.2: Bottom 10% of products by rating
 /*
