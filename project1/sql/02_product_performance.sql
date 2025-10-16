@@ -139,7 +139,11 @@ SELECT
     COUNT(*) as product_count, 
     ROUND(AVG(rating), 2) as avg_rating,
     ROUND(AVG(discounted_price), 2) as avg_price,
-    ROUND(SUM(discounted_price * 50), 2) as revenue
+    ROUND(SUM(discounted_price * 50), 2) as revenue,
+    ROUND(
+        ((SUM(discounted_price * (rating_count + 50)) - SUM(discounted_price * rating_count)) 
+         / SUM(discounted_price * rating_count)) * 100, 2
+    ) AS revenue_increase_percent
 FROM products
 WHERE rating >= 4.8 AND rating_count BETWEEN 10 AND 100;
 
@@ -298,7 +302,7 @@ WHERE rating >= 4.0 AND
     rating_count >= 50 AND
     discounted_price > 0
 ORDER BY value_score DESC
-LIMIT 20;
+LIMIT 10;
 
 
 
@@ -338,7 +342,7 @@ SELECT
 FROM products
 WHERE rating IS NOT NULL
 GROUP BY price_tier
-ORDER BY avg_price
+ORDER BY avg_price;
 
 
 /*

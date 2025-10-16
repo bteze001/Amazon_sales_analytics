@@ -69,35 +69,63 @@ Purpose: Compare categories against each other
 */
 
 -- 2.1: Top 10 categories vs Bottom 10 categories
-(
+-- aggregated table
+SELECT * FROM (
     SELECT 
-        'TOP 10' as group_type,
-        SUBSTRING_INDEX(category, '|', 1) as main_category,
-        COUNT(*) as products,
-        ROUND(AVG(rating), 2) as avg_rating,
-        ROUND(AVG(discounted_price), 2) as avg_price,
-        SUM(rating_count) as total_reviews
+        SUBSTRING_INDEX(category, '|', 1) AS main_category,
+        COUNT(*) AS products,
+        ROUND(AVG(rating), 2) AS avg_rating,
+        ROUND(AVG(discounted_price), 2) AS avg_price,
+        SUM(rating_count) AS total_reviews
     FROM products
     WHERE category IS NOT NULL
     GROUP BY main_category
-    ORDER BY AVG(rating) DESC
-    LIMIT 10
-)
+) AS agg;
+
+-- Use derived tables for top and bottom, exclude overlap
+SELECT 'TOP 5' AS group_type, t.main_category, t.products, t.avg_rating, t.avg_price, t.total_reviews
+FROM (
+    SELECT 
+        SUBSTRING_INDEX(category, '|', 1) AS main_category,
+        COUNT(*) AS products,
+        ROUND(AVG(rating), 2) AS avg_rating,
+        ROUND(AVG(discounted_price), 2) AS avg_price,
+        SUM(rating_count) AS total_reviews
+    FROM products
+    WHERE category IS NOT NULL
+    GROUP BY main_category
+    ORDER BY avg_rating DESC, SUM(rating_count) DESC
+    LIMIT 5
+) AS t
+
 UNION ALL
-(
+
+SELECT 'BOTTOM 5' AS group_type, b.main_category, b.products, b.avg_rating, b.avg_price, b.total_reviews
+FROM (
     SELECT 
-        'BOTTOM 10' as group_type,
-        SUBSTRING_INDEX(category, '|', 1) as main_category,
-        COUNT(*) as products,
-        ROUND(AVG(rating), 2) as avg_rating,
-        ROUND(AVG(discounted_price), 2) as avg_price,
-        SUM(rating_count) as total_reviews
+        SUBSTRING_INDEX(category, '|', 1) AS main_category,
+        COUNT(*) AS products,
+        ROUND(AVG(rating), 2) AS avg_rating,
+        ROUND(AVG(discounted_price), 2) AS avg_price,
+        SUM(rating_count) AS total_reviews
     FROM products
     WHERE category IS NOT NULL
     GROUP BY main_category
-    ORDER BY AVG(rating) ASC
-    LIMIT 10
-);
+    ORDER BY avg_rating ASC, SUM(rating_count) DESC
+    LIMIT 5  -- select more to account for exclusions if many top categories would be nearby
+) AS b
+LEFT JOIN (
+    SELECT SUBSTRING_INDEX(category, '|', 1) AS main_category
+    FROM products
+    WHERE category IS NOT NULL
+    GROUP BY main_category
+    ORDER BY AVG(rating) DESC, SUM(rating_count) DESC
+    LIMIT 5
+) AS ttop ON b.main_category = ttop.main_category
+WHERE ttop.main_category IS NULL
+LIMIT 5;
+
+
 
 -- 2.2: Category performance matrix (Rating vs Engagement)
 SELECT 
@@ -175,41 +203,44 @@ GROUP BY price_tier
 ORDER BY AVG(discounted_price);
 
 -- 3.2: Best performing tier vs Worst performing tier
-(
+-- Simple: remove wrapping parentheses
+SELECT * FROM (
     SELECT 
-        'BEST TIER' as performance,
+        'BEST TIER' AS performance,
         CASE 
             WHEN discounted_price < 500 THEN 'Budget'
             WHEN discounted_price < 1500 THEN 'Economy'
             WHEN discounted_price < 5000 THEN 'Mid-Range'
             WHEN discounted_price < 15000 THEN 'Premium'
             ELSE 'Luxury'
-        END as price_tier,
-        COUNT(*) as products,
-        ROUND(AVG(rating), 2) as avg_rating
+        END AS price_tier,
+        COUNT(*) AS products,
+        ROUND(AVG(rating), 2) AS avg_rating
     FROM products
     GROUP BY price_tier
-    ORDER BY AVG(rating) DESC
+    ORDER BY AVG(rating) DESC, COUNT(*) DESC
     LIMIT 1
-)
+) AS best
+
 UNION ALL
-(
+
+SELECT * FROM (
     SELECT 
-        'WORST TIER' as performance,
+        'WORST TIER' AS performance,
         CASE 
             WHEN discounted_price < 500 THEN 'Budget'
             WHEN discounted_price < 1500 THEN 'Economy'
             WHEN discounted_price < 5000 THEN 'Mid-Range'
             WHEN discounted_price < 15000 THEN 'Premium'
             ELSE 'Luxury'
-        END as price_tier,
-        COUNT(*) as products,
-        ROUND(AVG(rating), 2) as avg_rating
+        END AS price_tier,
+        COUNT(*) AS products,
+        ROUND(AVG(rating), 2) AS avg_rating
     FROM products
     GROUP BY price_tier
-    ORDER BY AVG(rating) ASC
+    ORDER BY AVG(rating) ASC, COUNT(*) DESC
     LIMIT 1
-);
+) AS worst;
 
 /*
 ============================================

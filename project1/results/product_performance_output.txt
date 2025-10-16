@@ -1,0 +1,212 @@
+total_products
+1351
+total_categories
+211
+avg_discounted_price	avg_actual_price	avg_discount_percentage
+39.66	68.30	46.69
+avg_rating	avg_rating_count
+4.09	17618.37
+product_id	product_name	specific_category	rating	rating_count	price	discount_percentage
+B0BR4F878Q	Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))	InstantWaterHeaters	4.8	53803.00	$17.27	28.0
+B0B53DS4TF	Instant Pot Air Fryer, Vortex 2QT, Touch Control Panel, 360 degrees EvenCrisp Technology, Uses 95 % less Oil, 4-in-1 Appliance: Air Fry, Roast, Bake, Reheat (Vortex 1.97Litre, Black)	AirFryers	4.8	3964.00	$59.94	75.0
+B0B23LW7NV	Spigen EZ Fit Tempered Glass Screen Protector for iPhone 14 Pro Max - 2 Pack (Sensor Protection)	ScreenProtectors	4.7	7779.00	$11.99	66.0
+B09WN3SRC7	Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart LED Google TV KD-65X74K (Black)	SmartTelevisions	4.7	5935.00	$935.88	44.0
+B0BP89YBC1	Campfire Spring Chef Prolix Instant Portable Water Heater Geyser 1Ltr. for Use Home Stainless Steel Baking Rack | Restaurant | Office | Labs | Clinics | Saloon | with Installation Kit (With MCB)	InstantWaterHeaters	4.7	2591.00	$17.99	57.0
+B0BM9H2NY9	Multifunctional 2 in 1 Electric Egg Boiling Steamer Egg Frying Pan Egg Boiler Electric Automatic Off with Egg Boiler Machine Non-Stick Electric Egg Frying Pan-Tiger Woods (Multy)	EggBoilers	4.7	2300.00	$8.39	56.0
+B0BM4KTNL1	FIGMENT Handheld Milk Frother Rechargeable, 3-Speed Electric Frother for Coffee with 2 Whisks and Coffee Decoration Tool, Coffee Frother Mixer, CRESCENT ENTERPRISES VRW0.50BK (A1)	HandBlenders	4.7	1729.00	$8.39	56.0
+B0BLC2BYPX	Zuvexa USB Rechargeable Electric Foam Maker - Handheld Milk Wand Mixer Frother for Hot Milk, Hand Blender Coffee, Egg Beater (Black)	HandBlenders	4.7	54.00	$5.99	62.0
+B01J1CFO5I	Redgear MP35 Speed-Type Gaming Mousepad (Black/Red)	Gamepads	4.6	33434.00	$3.59	46.0
+B095RTJH1M	Spigen EZ Fit Tempered Glass Screen Protector Guard for iPhone 14/13/13 Pro - 2 Pack	ScreenProtectors	4.6	26603.00	$11.99	66.0
+product_name	specific_category	rating	rating_count	price	discount_percentage
+Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))	InstantWaterHeaters	4.8	53803.00	$17.27	28.0
+Instant Pot Air Fryer, Vortex 2QT, Touch Control Panel, 360 degrees EvenCrisp Technology, Uses 95 % less Oil, 4-in-1 Appliance: Air Fry, Roast, Bake, Reheat (Vortex 1.97Litre, Black)	AirFryers	4.8	3964.00	$59.94	75.0
+product_name	specific_category	rating	rating_count	price
+AmazonBasics Flexible Premium HDMI Cable (Black, 4K@60Hz, 18Gbps), 3-Foot	HDMICables	4.4	426973.00	$2.63
+Amazon Basics High-Speed HDMI Cable, 6 Feet - Supports Ethernet, 3D, 4K video,Black	HDMICables	4.4	426973.00	$3.71
+Amazon Basics High-Speed HDMI Cable, 6 Feet (2-Pack),Black	HDMICables	4.4	426973.00	$3.71
+boAt Bassheads 100 in Ear Wired Earphones with Mic(Taffy Pink)	In-Ear	4.1	363713.00	$4.19
+boAt Bassheads 100 in Ear Wired Earphones with Mic(Furious Red)	In-Ear	4.1	363713.00	$4.55
+boAt BassHeads 100 in-Ear Wired Headphones with Mic (Black)	In-Ear	4.1	363711.00	$4.38
+Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery	Smartphones	4.1	313836.00	$77.99
+Redmi 9 Activ (Carbon Black, 4GB RAM, 64GB Storage) | Octa-core Helio G35 | 5000 mAh Battery	Smartphones	4.1	313836.00	$101.99
+Redmi 9A Sport (Carbon Black, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery	Smartphones	4.1	313832.00	$77.99
+Redmi 9A Sport (Coral Green, 3GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery	Smartphones	4.1	313832.00	$89.99
+product_name	specific_category	rating	rating_count	price
+Amazon Basics Wireless Mouse | 2.4 GHz Connection, 1600 DPI | Type - C Adapter | Upto 12 Months of Battery Life | Ambidextrous Design | Suitable for PC/Mac/Laptop	Mice	5.0	23.00	$5.99
+Oratech Coffee Frother electric, milk frother electric, coffee beater, cappuccino maker, Coffee Foamer, Mocktail Mixer, Coffee Foam Maker, coffee whisker electric, Froth Maker, coffee stirrers electric, coffee frothers, Coffee Blender, (6 Month Warranty) (Multicolour)	HandBlenders	4.8	28.00	$3.35
+metirc	product_count	avg_rating	avg_price	revenue	revenue_increase_percent
+Hidden Gems Analysis	2	4.90	4.67	467.00	201.67
+main_category	product_count	avg_rating	avg_reviews	avg_price
+Home&Kitchen	1	4.80000	28.000000	3.35
+Computers&Accessories	1	5.00000	23.000000	5.99
+product_name	main_category	rating	rating_count	price	discount_percentage
+Eureka Forbes car Vac 100 Watts Powerful Suction Vacuum Cleaner with Washable HEPA Filter, 3 Accessories,Compact,Light Weight & Easy to use (Black and Red)	Home&Kitchen	0.0	992.00	$25.19	16.00
+IONIX Tap filter Multilayer | Activated Carbon Faucet Water Filters Universal Interface Home Kitchen Faucet Tap Water Clean Purifier Filter Cartridge Five Layer Water Filter-Pack of 1	Home&Kitchen	2.9	159.00	$2.39	72.00
+MR. BRAND Portable USB Juicer Electric USB Juice Maker Mixer Bottle Blender Grinder Mixer,6 Blades Rechargeable Bottle with (Multi color) (MULTI MIXER 6 BLED)	Home&Kitchen	2.8	109.00	$5.99	77.00
+main_category	product_count	avg_rating	avg_reviews
+Home&Kitchen	6	2.10000	216.500000
+Electronics	1	2.80000	87.000000
+product_name	rating	rating_count	discount_percentage	original_price	discounted_price
+SHREENOVA ID116 Plus Bluetooth Fitness Smart Watch for Men Women and Kids Activity Tracker (Black)	2.8	87.00	86.00	$23.99	$3.37
+Amazon Brand - Solimo 65W Fast Charging Braided Type C to C Data Cable | Suitable For All Supported Mobile Phones (1 Meter, Black)	3.0	0.00	80.00	$11.99	$2.39
+MR. BRAND Portable USB Juicer Electric USB Juice Maker Mixer Bottle Blender Grinder Mixer,6 Blades Rechargeable Bottle with (Multi color) (MULTI MIXER 6 BLED)	2.8	109.00	77.00	$26.39	$5.99
+Tokdis MX-1 Pro Bluetooth Calling Smartwatch - 1.69" LCD Display, Multiple Watch Faces, Sleep Monitor, Heart & SpO2 Monitoring, Multiple Sports Modes, Water Resistant	3.0	681.00	74.00	$41.99	$10.79
+IONIX Tap filter Multilayer | Activated Carbon Faucet Water Filters Universal Interface Home Kitchen Faucet Tap Water Clean Purifier Filter Cartridge Five Layer Water Filter-Pack of 1	2.9	159.00	72.00	$8.39	$2.39
+7SEVEN Compatible LG TV Remote Suitable for LG Non Magic Smart tv Remote Control (Mouse & Voice Non-Support) MR20GA Prime Video and Netflix Hotkeys	3.0	103.00	60.00	$23.99	$9.48
+Nirdambhay Mini Bag Sealer, 2 in 1 Heat Sealer and Cutter Handheld Sealing Machine Portable Bag Resealer Sealer for Plastic Bags Food Storage Snack Fresh Bag Sealer (Including 2 AA Battery)	3.0	617.00	57.00	$11.99	$5.15
+Personal Size Blender, Portable Blender, Battery Powered USB Blender, with Four Blades, Mini Blender Travel Bottle for Juice, Shakes, and Smoothies (Pink)	2.3	13.00	55.00	$17.99	$8.03
+product_name	specific_category	raw_rating	reviews	weighted_rating	price
+Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))	InstantWaterHeaters	4.8	53803.00	4.80	$17.27
+Instant Pot Air Fryer, Vortex 2QT, Touch Control Panel, 360 degrees EvenCrisp Technology, Uses 95 % less Oil, 4-in-1 Appliance: Air Fry, Roast, Bake, Reheat (Vortex 1.97Litre, Black)	AirFryers	4.8	3964.00	4.79	$59.94
+Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart LED Google TV KD-65X74K (Black)	SmartTelevisions	4.7	5935.00	4.70	$935.88
+Spigen EZ Fit Tempered Glass Screen Protector for iPhone 14 Pro Max - 2 Pack (Sensor Protection)	ScreenProtectors	4.7	7779.00	4.70	$11.99
+Multifunctional 2 in 1 Electric Egg Boiling Steamer Egg Frying Pan Egg Boiler Electric Automatic Off with Egg Boiler Machine Non-Stick Electric Egg Frying Pan-Tiger Woods (Multy)	EggBoilers	4.7	2300.00	4.69	$8.39
+Campfire Spring Chef Prolix Instant Portable Water Heater Geyser 1Ltr. for Use Home Stainless Steel Baking Rack | Restaurant | Office | Labs | Clinics | Saloon | with Installation Kit (With MCB)	InstantWaterHeaters	4.7	2591.00	4.69	$17.99
+FIGMENT Handheld Milk Frother Rechargeable, 3-Speed Electric Frother for Coffee with 2 Whisks and Coffee Decoration Tool, Coffee Frother Mixer, CRESCENT ENTERPRISES VRW0.50BK (A1)	HandBlenders	4.7	1729.00	4.68	$8.39
+Sujata Dynamix DX Mixer Grinder, 900W, 3 Jars (White)	MixerGrinders	4.6	6550.00	4.60	$73.44
+Logitech M331 Silent Plus Wireless Mouse, 2.4GHz with USB Nano Receiver, 1000 DPI Optical Tracking, 3 Buttons, 24 Month Life Battery, PC/Mac/Laptop - Black	Mice	4.6	12375.00	4.60	$15.54
+Spigen EZ Fit Tempered Glass Screen Protector for iPhone 14 Pro - 2 Pack (Sensor Protection)	ScreenProtectors	4.6	6129.00	4.60	$11.99
+product_name	raw_rating	rating_count	weighted_rating	rating_adjustment
+REDTECH USB-C to Lightning Cable 3.3FT, [Apple MFi Certified] Lightning to Type C Fast Charging Cord Compatible with iPhone 14/13/13 pro/Max/12/11/X/XS/XR/8, Supports Power Delivery - White	5.0	0.00	4.09	0.91
+Syncwire LTG to USB Cable for Fast Charging Compatible with Phone 5/ 5C/ 5S/ 6/ 6S/ 7/8/ X/XR/XS Max/ 11/12/ 13 Series and Pad Air/Mini, Pod & Other Devices (1.1 Meter, White)	5.0	5.00	4.17	0.83
+Amazon Basics Wireless Mouse | 2.4 GHz Connection, 1600 DPI | Type - C Adapter | Upto 12 Months of Battery Life | Ambidextrous Design | Suitable for PC/Mac/Laptop	5.0	23.00	4.38	0.62
+Oratech Coffee Frother electric, milk frother electric, coffee beater, cappuccino maker, Coffee Foamer, Mocktail Mixer, Coffee Foam Maker, coffee whisker electric, Froth Maker, coffee stirrers electric, coffee frothers, Coffee Blender, (6 Month Warranty) (Multicolour)	4.8	28.00	4.34	0.46
+Melbon VM-905 2000-Watt Room Heater (ISI Certified, White Color) Ideal Electric Fan Heater for Small to Medium Room/Area (Plastic Body)	4.6	9.00	4.17	0.43
+WANBO X1 Pro (Upgraded) | Native 1080P Full HD | Android 9 | Projector for Home | LED Cinema | 350ANSI | 3900 lumens | WiFi Bluetooth | HDMI ARC | Dolby DTS | 4D Keystone Correction (Global Version)	4.5	7.00	4.14	0.36
+!!1000 Watt/2000-Watt Room Heater!! Fan Heater!!Pure White!!HN-2500!!Made in India!!	4.5	11.00	4.16	0.34
+Homeistic Applience Instant Electric Water Heater Faucet Tap For Kitchen And Bathroom Sink Digital Water Heating Tap with Shower Head ABS Body- Shock Proof (Pack Of 1. White)	4.5	19.00	4.20	0.30
+Zuvexa USB Rechargeable Electric Foam Maker - Handheld Milk Wand Mixer Frother for Hot Milk, Hand Blender Coffee, Egg Beater (Black)	4.7	54.00	4.41	0.29
+Noise_Colorfit Smart Watch Charger 2 Pin USB Fast Charger Magnetic Charging Cable Adapter (Smart Watch Charger 2 pin)	4.5	38.00	4.27	0.23
+product_name	rating	rating_count	main_category	price	value_score
+Classmate Octane Neon- Blue Gel Pens(Pack of 5)|Smooth Writing Pen|Attractive body colour for Boys & Girls|Waterproof ink for smudge free writing|Preferred by Students for Exam|Study at home essential	4.3	5792.00	OfficeProducts	$0.60	7.17
+FLiX (Beetel Flow USB to Micro USB PVC Data Sync & 12W(2.4A) Fast Charging Cable,Made in India,480Mbps Data Sync,Solid Cable,1 Meter Long cable for all Andriod & Micro USB Devices (Black)(XCD-FPM01)	4.0	9378.00	Computers&Accessories	$0.69	5.80
+FLiX (Beetel USB to Micro USB PVC Data Sync & 2A Fast Charging Cable, Made in India, 480Mbps Data Sync, Solid Cable, 1 Meter Long USB Cable for Micro USB Devices (White)(XCD-M11)	4.0	9378.00	Computers&Accessories	$0.71	5.63
+Flix Micro Usb Cable For Smartphone (Black)	4.0	9378.00	Computers&Accessories	$0.71	5.63
+Gizga Essentials Webcam Cover, Privacy Protector Webcam Cover Slide, Compatible with Laptop, Desktop, PC, Smartphone, Protect Your Privacy and Security, Strong Adhesive, Set of 3, Black	4.3	255.00	Computers&Accessories	$0.83	5.18
+Classmate Pulse Spiral Notebook - 240 mm x 180 mm, Soft Cover, 200 Pages, Unruled	4.1	1269.00	OfficeProducts	$0.80	5.13
+STRIFF 12 Pieces Highly Flexible Silicone Micro USB Protector, Mouse Cable Protector, Suit for All Cell Phones, Computers and Chargers (Black)	4.2	1949.00	Electronics	$0.95	4.42
+Kitchenwell 18Pc Plastic Food Snack Bag Pouch Clip Sealer for Keeping Food Fresh for Home, Kitchen, Camping Snack Seal Sealing Bag Clips (Multi-Color) | (Pack of 18)|	4.0	97.00	Home&Kitchen	$0.95	4.21
+3M Post-it Sticky Note Cube, 200 Sheets (4 Colors x 50 Sheets) | 3" x 3" Size | For notes, reminders, study, school and organizing	4.4	7429.00	OfficeProducts	$1.08	4.07
+Classmate Octane Colour Burst-Multicolour Gel Pens (Pack of 10) | Gold & Silver Glitter Sparkle Pens|10 colour ink shades for art lovers and kids|Fun at home essentials	4.4	10718.00	Home&Kitchen	$1.08	4.07
+Elv Mobile Phone Mount Tabletop Holder for Phones and Tablets - Black	4.3	2351.00	Electronics	$1.07	4.02
+Empty Mist Trigger Plastic Spray Bottle for Multi use 200ml Pack of 2	4.1	212.00	Home&Kitchen	$1.02	4.02
+Parker Quink Ink Bottle (Black)	4.3	3061.00	OfficeProducts	$1.08	3.98
+VR 18 Pcs - 3 Different Size Plastic Food Snack Bag Pouch Clip Sealer Large, Medium, Small Plastic Snack Seal Sealing Bag Clips Vacuum Sealer (Set of 18, Multi-Color) (Multicolor)	4.2	19621.00	Home&Kitchen	$1.07	3.93
+E-COSMOS Plug in LED Night Light Mini USB LED Light Flexible USB LED Ambient Light Mini USB LED Light, LED Portable car Bulb, Indoor, Outdoor, Reading, Sleep (4 pcs)	4.2	241.00	Computers&Accessories	$1.07	3.93
+STRIFF Wall Mount Phone Holder Wall Mount with Adhesive Strips, Charging Holder Compatible with iPhone, Smartphone and Mini Tablet (Pack of 1) (White)	4.1	9340.00	Electronics	$1.07	3.83
+Pilot Frixion Clicker Roller Pen (Blue), (9000019529)	4.1	6199.00	OfficeProducts	$1.08	3.80
+Goldmedal Curve Plus 202042 Plastic Spice 3-Pin 240V Universal Travel Adaptor (White)	4.5	11339.00	Electronics	$1.19	3.78
+FLiX (Beetel USB to Type C PVC Data Sync & 15W(3A) TPE Fast Charging Cable, Made in India, 480Mbps Data Sync, 1 Meter Long cable for all Andriod & all Type C Devices (Black)(XCD - FPC02)	4.0	9378.00	Computers&Accessories	$1.06	3.77
+LAPSTER 12pcs Spiral Cable Protectors for Charger, Wires, Data Charger Cable Protector for Computers, Cell Phones etc.(Grey)	4.4	305.00	Electronics	$1.19	3.70
+product_name	main_category	rating	rating_count	price	discount_percentage
+Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart LED Google TV KD-65X74K (Black)	Electronics	4.7	5935.00	$935.88	44.00
+Xiaomi Pad 5| Qualcomm Snapdragon 860| 120Hz Refresh Rate| 6GB, 128GB| 2.5K+ Display (10.95-inch/27.81cm)|1 Billion Colours| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray	Computers&Accessories	4.6	2886.00	$323.99	29.00
+price_tier	avg_price	avg_rating	product_count
+LOW	35.35	4.09	1341
+MEDIUM	617.94	4.30	10
+product_name	main_category	rating	rating_count	category_avg_reviews	pct_above_category_avg
+Pigeon Polypropylene Mini Handy and Compact Chopper with 3 Blades for Effortlessly Chopping Vegetables and Fruits for Your Kitchen (12420, Green, 400 ml)	Home&Kitchen	4.1	270563.00	6676	3952.5
+Pigeon by Stovekraft Amaze Plus Electric Kettle (14289) with Stainless Steel Body, 1.5 litre, used for boiling Water, making tea and coffee, instant noodles, soup etc. 1500 Watt (Silver)	Home&Kitchen	3.9	123365.00	6676	1747.8
+SanDisk Cruzer Blade 32GB USB Flash Drive	Computers&Accessories	4.3	253105.00	16894	1398.2
+Amazon Basics High-Speed HDMI Cable, 6 Feet - Supports Ethernet, 3D, 4K video,Black	Electronics	4.4	426973.00	28997	1372.5
+Amazon Basics High-Speed HDMI Cable, 6 Feet (2-Pack),Black	Electronics	4.4	426973.00	28997	1372.5
+AmazonBasics Flexible Premium HDMI Cable (Black, 4K@60Hz, 18Gbps), 3-Foot	Electronics	4.4	426973.00	28997	1372.5
+boAt BassHeads 100 in-Ear Wired Headphones with Mic (Black)	Electronics	4.1	363711.00	28997	1154.3
+boAt Bassheads 100 in Ear Wired Earphones with Mic(Taffy Pink)	Electronics	4.1	363713.00	28997	1154.3
+boAt Bassheads 100 in Ear Wired Earphones with Mic(Furious Red)	Electronics	4.1	363713.00	28997	1154.3
+SanDisk Ultra Dual 64 GB USB 3.0 OTG Pen Drive (Black)	Computers&Accessories	4.3	189104.00	16894	1019.4
+Redmi 9 Activ (Carbon Black, 4GB RAM, 64GB Storage) | Octa-core Helio G35 | 5000 mAh Battery	Electronics	4.1	313836.00	28997	982.3
+Redmi 9A Sport (Coral Green, 3GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery	Electronics	4.1	313832.00	28997	982.3
+Redmi 9A Sport (Carbon Black, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery	Electronics	4.1	313832.00	28997	982.3
+Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery	Electronics	4.1	313836.00	28997	982.3
+TP-LINK WiFi Dongle 300 Mbps Mini Wireless Network USB Wi-Fi Adapter for PC Desktop Laptop(Supports Windows 11/10/8.1/8/7/XP, Mac OS 10.9-10.15 and Linux, WPS, Soft AP Mode, USB 2.0) (TL-WN823N),Black	Computers&Accessories	4.2	179691.00	16894	963.7
+TP-Link USB WiFi Adapter for PC(TL-WN725N), N150 Wireless Network Adapter for Desktop - Nano Size WiFi Dongle Compatible with Windows 11/10/7/8/8.1/XP/ Mac OS 10.9-10.15 Linux Kernel 2.6.18-4.4.3	Computers&Accessories	4.2	179691.00	16894	963.7
+TP-Link Nano USB WiFi Dongle 150Mbps High Gain Wireless Network Wi-Fi Adapter for PC Desktop and Laptops, Supports Windows 10/8.1/8/7/XP, Linux, Mac OS X (TL-WN722N)	Computers&Accessories	4.2	179692.00	16894	963.7
+Amazon Basics USB A to Lightning MFi Certified Charging Cable (White, 1.2 meter)	Computers&Accessories	4.1	178817.00	16894	958.5
+Prestige Electric Kettle PKOSS - 1500watts, Steel (1.5Ltr), Black	Home&Kitchen	3.9	63350.00	6676	848.9
+boAt Bassheads 225 in Ear Wired Earphones with Mic(Blue)	Electronics	4.1	273189.00	28997	842.1
+TP-Link TL-WA850RE Single_Band 300Mbps RJ45 Wireless Range Extender, Broadband/Wi-Fi Extender, Wi-Fi Booster/Hotspot with 1 Ethernet Port, Plug and Play, Built-in Access Point Mode, White	Computers&Accessories	4.2	156638.00	16894	827.2
+Pigeon by Stovekraft Cruise 1800 watt Induction Cooktop (Black)	Home&Kitchen	3.8	54032.00	6676	709.3
+Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))	Home&Kitchen	4.8	53803.00	6676	705.9
+TP-link N300 WiFi Wireless Router TL-WR845N | 300Mbps Wi-Fi Speed | Three 5dBi high gain Antennas | IPv6 Compatible | AP/RE/WISP Mode | Parental Control | Guest Network	Computers&Accessories	4.2	122478.00	16894	625.0
+SanDisk Extreme SD UHS I 64GB Card for 4K Video for DSLR and Mirrorless Cameras 170MB/s Read & 80MB/s Write	Electronics	4.5	205052.00	28997	607.2
+Bajaj DX-7 1000W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, White	Home&Kitchen	4.2	46647.00	6676	598.7
+Glun Multipurpose Portable Electronic Digital Weighing Scale Weight Machine (10 Kg - with Back Light)	Home&Kitchen	3.9	44994.00	6676	573.9
+JBL C100SI Wired In Ear Headphones with Mic, JBL Pure Bass Sound, One Button Multi-function Remote, Angled Buds for Comfort fit (Black)	Electronics	4.1	192590.00	28997	564.2
+JBL C100SI Wired In Ear Headphones with Mic, JBL Pure Bass Sound, One Button Multi-function Remote, Premium Metallic Finish, Angled Buds for Comfort fit (Red)	Electronics	4.1	192589.00	28997	564.2
+Lifelong LLMG23 Power Pro 500-Watt Mixer Grinder with 3 Jars (Liquidizing, Wet Grinding and Chutney Jar), Stainless Steel blades, 1 Year Warranty (Black)	Home&Kitchen	3.8	44050.00	6676	559.8
+product_name	main_category	rating	rating_count	category_avg_reviews	pct_below_category_avg
+Amazon Brand - Solimo 65W Fast Charging Braided Type C to C Data Cable | Suitable For All Supported Mobile Phones (1 Meter, Black)	Computers&Accessories	3.0	0.00	16894	100.0
+Syncwire LTG to USB Cable for Fast Charging Compatible with Phone 5/ 5C/ 5S/ 6/ 6S/ 7/8/ X/XR/XS Max/ 11/12/ 13 Series and Pad Air/Mini, Pod & Other Devices (1.1 Meter, White)	Computers&Accessories	5.0	5.00	16894	100.0
+Khaitan ORFin Fan heater for Home and kitchen-K0 2215	Home&Kitchen	2.0	2.00	6676	100.0
+7SEVEN Compatible for Tata Sky Remote Original Set Top HD Box and Suitable for SD Tata Play setup Box Remote Control	Electronics	4.3	12.00	28997	100.0
+Amazon Basics 2 Amp USB Wall Charger & Micro USB Cable (White)	Electronics	4.4	14.00	28997	100.0
+REDTECH USB-C to Lightning Cable 3.3FT, [Apple MFi Certified] Lightning to Type C Fast Charging Cord Compatible with iPhone 14/13/13 pro/Max/12/11/X/XS/XR/8, Supports Power Delivery - White	Computers&Accessories	5.0	0.00	16894	100.0
+WANBO X1 Pro (Upgraded) | Native 1080P Full HD | Android 9 | Projector for Home | LED Cinema | 350ANSI | 3900 lumens | WiFi Bluetooth | HDMI ARC | Dolby DTS | 4D Keystone Correction (Global Version)	Electronics	4.5	7.00	28997	100.0
+NGI Store 2 Pieces Pet Hair Removers for Your Laundry Catcher Lint Remover for Washing Machine Lint Remover Reusable Portable Silica Gel Clothes Washer Dryer Floating Ball	Home&Kitchen	3.1	2.00	6676	100.0
+Longway Blaze 2 Rod Quartz Room Heater (White, Gray, 800 watts)	Home&Kitchen	3.7	4.00	6676	99.9
+ZEBRONICS HAA2021 HDMI version 2.1 cable with 8K @ 60Hz, 4K @ 120Hz, eARC & CEC support, 3D compatible, 2 meters length, 48Gbps max and Gold-plated connectors	Electronics	4.1	24.00	28997	99.9
+C (DEVICE) Lint Remover for Woolen Clothes, Electric Lint Remover, Best Lint Shaver for Clothes Pack of 1	Home&Kitchen	3.7	6.00	6676	99.9
+KNYUC MART Mini Electric Handy Room Heater Compact Plug-in, The Wall Outlet 400 Watts, Handy Air Warmer Blower Adjustable Timer Digital Display	Home&Kitchen	3.3	8.00	6676	99.9
+Noise_Colorfit Smart Watch Charger 2 Pin USB Fast Charger Magnetic Charging Cable Adapter (Smart Watch Charger 2 pin)	Electronics	4.5	38.00	28997	99.9
+Melbon VM-905 2000-Watt Room Heater (ISI Certified, White Color) Ideal Electric Fan Heater for Small to Medium Room/Area (Plastic Body)	Home&Kitchen	4.6	9.00	6676	99.9
+WZATCO Pixel | Portable LED Projector | Native 720p with Full HD 1080P Support | 2000 Lumens (200 ANSI) | 176" Large Screen | Projector for Home and Outdoor | Compatible with TV Stick, PC, PS4	Electronics	4.0	27.00	28997	99.9
+KLAM LCD Writing Tablet Screenwriting Toys Board Smart Digital E-Note Pad 8.5 Inch Light Weight Magic Slate for Drawing Playing Noting by Kids and Adults Best Birthday Gift Girls Boys, Multicolor	Computers&Accessories	4.1	21.00	16894	99.9
+Remote Control Compatible for Amazon Fire Tv Stick Remote Control [ 3rd Gen ](Not Compatible for Fire TV Edition Smart TV) from basesailor	Electronics	3.7	37.00	28997	99.9
+Noise ColorFit Pro 4 Alpha Bluetooth Calling Smart Watch with 1.78 AMOLED Display, Tru Sync, 60hz Refresh Rate, instacharge, Gesture Control, Functional 360 Digital Crown (Jet Black)	Electronics	3.5	37.00	28997	99.9
+Firestick Remote	Electronics	4.0	32.00	28997	99.9
+VAPJA Portable Mini Juicer Cup Blender USB Rechargeable with 4 Blades for Shakes and Smoothies Fruits Vegetables Juice Maker Grinder Mixer Strong Cutting Bottle Sports Travel Outdoors Gym (BOTTLE)	Home&Kitchen	3.6	4.00	6676	99.9
+Amazon Basics Wireless Mouse | 2.4 GHz Connection, 1600 DPI | Type - C Adapter | Upto 12 Months of Battery Life | Ambidextrous Design | Suitable for PC/Mac/Laptop	Computers&Accessories	5.0	23.00	16894	99.9
+Kitchenwell Multipurpose Portable Electronic Digital Weighing Scale Weight Machine | Weight Machine | 10 Kg	Home&Kitchen	4.3	7.00	6676	99.9
+Lifelong LLQH925 Dyno Quartz Heater 2 Power settings Tip Over Cut-off Switch 800 Watt Silent operation Power Indicator 2 Rod Room Heater (1 Year Warranty, Grey)	Home&Kitchen	3.8	4.00	6676	99.9
+LOHAYA Voice Assistant Remote Compatible for Airtel Xstream Set-Top Box Remote Control with Netflix Function (Black) (Non - Voice)	Electronics	3.3	23.00	28997	99.9
+Technotech High Speed HDMI Cable 5 Meter V1.4 - Supports Full HD 1080p (Color May Vary)	Electronics	4.2	25.00	28997	99.9
+!!HANEUL!!1000 Watt/2000-Watt Room Heater!! Fan Heater!!Pure White!!HN-2500!!Made in India!!Thermoset!!	Home&Kitchen	3.4	15.00	6676	99.8
+Personal Size Blender, Portable Blender, Battery Powered USB Blender, with Four Blades, Mini Blender Travel Bottle for Juice, Shakes, and Smoothies (Pink)	Home&Kitchen	2.3	13.00	6676	99.8
+Lava Charging Adapter Elements D3 2A Fast Charging Speed Usb Type C Data Cable, White	Computers&Accessories	3.7	41.00	16894	99.8
+Tuarso 8K HDMI 2.1 Cable 48Gbps , 1.5 Meter High-Speed Braided HDMI Cable ( 8K@60HZ4K@120HZ2K@240HZ ) HDMI 2.1 Cable Compatible with Monitors , Television , Laptops , Projectors , Game Consoles and more with HDMI Ports Device	Electronics	4.2	47.00	28997	99.8
+TCL 80 cm (32 inches) HD Ready Certified Android Smart LED TV 32S615 (Black)	Electronics	4.2	64.00	28997	99.8
+product_name	main_category	rating	rating_count	avg_rating	rating_vs_avg	price	discount_percentage
+Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))	Home&Kitchen	4.8	53803.00	4.08882	0.71	$17.27	28.00
+Instant Pot Air Fryer, Vortex 2QT, Touch Control Panel, 360 degrees EvenCrisp Technology, Uses 95 % less Oil, 4-in-1 Appliance: Air Fry, Roast, Bake, Reheat (Vortex 1.97Litre, Black)	Home&Kitchen	4.8	3964.00	4.08882	0.71	$59.94	75.00
+Zuvexa USB Rechargeable Electric Foam Maker - Handheld Milk Wand Mixer Frother for Hot Milk, Hand Blender Coffee, Egg Beater (Black)	Home&Kitchen	4.7	54.00	4.08882	0.61	$5.99	62.00
+Spigen EZ Fit Tempered Glass Screen Protector for iPhone 14 Pro Max - 2 Pack (Sensor Protection)	Electronics	4.7	7779.00	4.08882	0.61	$11.99	66.00
+Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart LED Google TV KD-65X74K (Black)	Electronics	4.7	5935.00	4.08882	0.61	$935.88	44.00
+Campfire Spring Chef Prolix Instant Portable Water Heater Geyser 1Ltr. for Use Home Stainless Steel Baking Rack | Restaurant | Office | Labs | Clinics | Saloon | with Installation Kit (With MCB)	Home&Kitchen	4.7	2591.00	4.08882	0.61	$17.99	57.00
+FIGMENT Handheld Milk Frother Rechargeable, 3-Speed Electric Frother for Coffee with 2 Whisks and Coffee Decoration Tool, Coffee Frother Mixer, CRESCENT ENTERPRISES VRW0.50BK (A1)	Home&Kitchen	4.7	1729.00	4.08882	0.61	$8.39	56.00
+Multifunctional 2 in 1 Electric Egg Boiling Steamer Egg Frying Pan Egg Boiler Electric Automatic Off with Egg Boiler Machine Non-Stick Electric Egg Frying Pan-Tiger Woods (Multy)	Home&Kitchen	4.7	2300.00	4.08882	0.61	$8.39	56.00
+10k 8k 4k HDMI Cable, Certified 48Gbps 1ms Ultra High Speed HDMI 2.1 Cable 4k 120Hz 144Hz 2k 165Hz 8k 60Hz Dynamic HDR ARC eARC DTS:X Compatible for Mac Gaming PC Soundbar TV Monitor Laptop PS5 4 Xbox	Electronics	4.6	3664.00	4.08882	0.51	$11.99	58.00
+Redgear MP35 Speed-Type Gaming Mousepad (Black/Red)	Computers&Accessories	4.6	33434.00	4.08882	0.51	$3.59	46.00
+product_name	category	rating	portfolio_avg_rating	rating_vs_avg	rating_count	discount_percentage
+Eureka Forbes car Vac 100 Watts Powerful Suction Vacuum Cleaner with Washable HEPA Filter, 3 Accessories,Compact,Light Weight & Easy to use (Black and Red)	HandheldVacuums	0.0	4.08882	-4.09	992.00	16.00
+SHREENOVA ID116 Plus Bluetooth Fitness Smart Watch for Men Women and Kids Activity Tracker (Black)	SmartWatches	2.8	4.08882	-1.29	87.00	86.00
+MR. BRAND Portable USB Juicer Electric USB Juice Maker Mixer Bottle Blender Grinder Mixer,6 Blades Rechargeable Bottle with (Multi color) (MULTI MIXER 6 BLED)	JuicerMixerGrinders	2.8	4.08882	-1.29	109.00	77.00
+IONIX Tap filter Multilayer | Activated Carbon Faucet Water Filters Universal Interface Home Kitchen Faucet Tap Water Clean Purifier Filter Cartridge Five Layer Water Filter-Pack of 1	WaterPurifierAccessories	2.9	4.08882	-1.19	159.00	72.00
+Tokdis MX-1 Pro Bluetooth Calling Smartwatch - 1.69" LCD Display, Multiple Watch Faces, Sleep Monitor, Heart & SpO2 Monitoring, Multiple Sports Modes, Water Resistant	SmartWatches	3.0	4.08882	-1.09	681.00	74.00
+Nirdambhay Mini Bag Sealer, 2 in 1 Heat Sealer and Cutter Handheld Sealing Machine Portable Bag Resealer Sealer for Plastic Bags Food Storage Snack Fresh Bag Sealer (Including 2 AA Battery)	VacuumSealers	3.0	4.08882	-1.09	617.00	57.00
+7SEVEN Compatible LG TV Remote Suitable for LG Non Magic Smart tv Remote Control (Mouse & Voice Non-Support) MR20GA Prime Video and Netflix Hotkeys	RemoteControls	3.0	4.08882	-1.09	103.00	60.00
+ROYAL STEP - AMAZON'S BRAND - Portable Electric USB Juice Maker Juicer Bottle Blender Grinder Mixer,4 Blades Rechargeable Bottle with (Multi color) (MULTI)	Juicers	3.1	4.08882	-0.99	3527.00	77.00
+akiara - Makes life easy Electric Handy Sewing/Stitch Handheld Cordless Portable White Sewing Machine for Home Tailoring, Hand Machine | Mini Silai | White Hand Machine with Adapter	Sewing&EmbroideryMachines	3.1	4.08882	-0.99	2449.00	52.00
+Amazon Basics 2000/1000 Watt Room Heater with Adjustable Thermostat (ISI certified, White color, Ideal for small to medium room/area)	FanHeaters	3.1	4.08882	-0.99	111.00	38.00
+product_name	category	rating	rating_count	price
+Amazon Basics Wireless Mouse | 2.4 GHz Connection, 1600 DPI | Type - C Adapter | Upto 12 Months of Battery Life | Ambidextrous Design | Suitable for PC/Mac/Laptop	Mice	5.0	23.00	$5.99
+Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))	InstantWaterHeaters	4.8	53803.00	$17.27
+Oratech Coffee Frother electric, milk frother electric, coffee beater, cappuccino maker, Coffee Foamer, Mocktail Mixer, Coffee Foam Maker, coffee whisker electric, Froth Maker, coffee stirrers electric, coffee frothers, Coffee Blender, (6 Month Warranty) (Multicolour)	HandBlenders	4.8	28.00	$3.35
+Instant Pot Air Fryer, Vortex 2QT, Touch Control Panel, 360 degrees EvenCrisp Technology, Uses 95 % less Oil, 4-in-1 Appliance: Air Fry, Roast, Bake, Reheat (Vortex 1.97Litre, Black)	AirFryers	4.8	3964.00	$59.94
+Campfire Spring Chef Prolix Instant Portable Water Heater Geyser 1Ltr. for Use Home Stainless Steel Baking Rack | Restaurant | Office | Labs | Clinics | Saloon | with Installation Kit (With MCB)	InstantWaterHeaters	4.7	2591.00	$17.99
+Multifunctional 2 in 1 Electric Egg Boiling Steamer Egg Frying Pan Egg Boiler Electric Automatic Off with Egg Boiler Machine Non-Stick Electric Egg Frying Pan-Tiger Woods (Multy)	EggBoilers	4.7	2300.00	$8.39
+FIGMENT Handheld Milk Frother Rechargeable, 3-Speed Electric Frother for Coffee with 2 Whisks and Coffee Decoration Tool, Coffee Frother Mixer, CRESCENT ENTERPRISES VRW0.50BK (A1)	HandBlenders	4.7	1729.00	$8.39
+Zuvexa USB Rechargeable Electric Foam Maker - Handheld Milk Wand Mixer Frother for Hot Milk, Hand Blender Coffee, Egg Beater (Black)	HandBlenders	4.7	54.00	$5.99
+Spigen EZ Fit Tempered Glass Screen Protector for iPhone 14 Pro Max - 2 Pack (Sensor Protection)	ScreenProtectors	4.7	7779.00	$11.99
+Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart LED Google TV KD-65X74K (Black)	SmartTelevisions	4.7	5935.00	$935.88
+performance_category	product_count	percentage	avg_reviews	avg_price	estimated_revenue
+Excellent (4.5-5.0)	96	7.11	14612	31.73	27407306.38
+Very Good (4.0-4.4)	914	67.65	21161	47.48	732472981.98
+Good (3.5-3.9)	299	22.13	9950	22.31	66643481.78
+Average (3.0-3.4)	35	2.59	2344	11.61	1024177.08
+Below Average (<3.0)	7	0.52	198	8.93	26496.48
+metric	value
+Top Rated Product	Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))
+Most Reviewed Product	Amazon Basics High-Speed HDMI Cable, 6 Feet - Supports Ethernet, 3D, 4K video,Black
+Most Expensive Product	Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart LED Google TV KD-65X74K (Black) - $935.88
+Best Value Product	Goldmedal Curve Plus 202042 Plastic Spice 3-Pin 240V Universal Travel Adaptor (White)
