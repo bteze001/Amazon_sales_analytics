@@ -1,0 +1,5 @@
+discount_range,product_count,avg_rating,avg_review_count,min_rating,max_rating,total_revenue,avg_price,rating_lift_pct,review_lift_multiple,range_order
+0-25%,228,4.15,19718.0,0.0,4.6,299670458.03,51.31,0.0,1.0,1
+25-40%,250,4.12,16244.0,3.1,4.8,301854399.76,84.7,-0.72,0.82,2
+40-60%,449,4.08,15246.0,2.0,5.0,144313222.2,35.72,-1.69,0.77,3
+60%+,424,4.04,19812.0,2.8,5.0,81736363.71,11.01,-2.65,1.0,4
