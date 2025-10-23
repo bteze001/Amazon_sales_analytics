@@ -4,7 +4,7 @@
 
 Analyze pricing strategies and discount effectiveness to identify optimal pricing and discount levels for maximizing ratings and revenue.
 
-This project analyzes the impact of pricing and discount strategies on product ratings, revenue distribution, and customer perception. 
+This project analyzes the impact of pricing and discount strategies on product ratings, revenue distribution, and customer perception.
 
 It combines **statistical analysis in Python** and **interactive data visualization in Tableau** to identify optimal pricing tiers and discount levels for maximizing profitability and satisfaction.
 
@@ -32,7 +32,7 @@ It combines **statistical analysis in Python** and **interactive data visualizat
 │ │ ├──screenshots/
 │ └── amazon_pricing_dashboard.twbx 
 │
-├── pricing_insights.md
+├── insights.md
 └── README.md # Project Overview & Instructions
 ```
 
@@ -58,25 +58,56 @@ Data is extracted from a MySQL database named `amazonSales`, containing product-
    ```
 2. Export Data for Tableau
 
-   - Run export_data.ipynb notebook to create all the .csv files under the `/data` folder.
-3. Run Statistical Analysis
+   Run the notebook:
 
-   - Open notebooks/statistical_analysis.ipynb to run:
-     - Descriptive statistics
-     - Two-sample t-tests
-     - Correlation analysis
+   ```
+   notebooks/export_data.ipynb
+   ```
+
+   This generates all requires `.csv`  datasets inside the `/data` folder, formatted for Tableau visualization
+4. Run Statistical Analysis
+
+    `notebooks/statistical_analysis.ipynb `
+
+* This notebook performs:
+  * Descriptive statistics
+  * Two-sample **t-tests** (discounted vs non-discounted)
+  * **ANOVA** (rating comparison across price tiers)
+  * **Effect size (Cohen’s d)** calculations
+  * Visualizations of rating distributions
+
 4. View Tableau Dashboard
 
-   - Open the amazon_pricing_dashboard.twbx to explore the visual insights
+   - Open the interactive dahsboard: `result/tableau_dashboard.twbx`
+     - Explore visual KPIs such as:
+       - Discount Effectiveness
+       - Revenue by Price Tier
+       - Category Performance
+       - Top Performing Products
+       - Price vs Rating Engagement
 
-## Tools Used 
+## Tools Used
 
 * Python
 
   - Pandas
-  - Matplitlib
-  - Seaborn
+  - Matplitlib / Seaborn
   - numpy
-  - MySQL connector ...
-* MySQL
-* Tableau
+  - MySQL connector
+  - scipy.stats
+* Database
+
+  * MySQL
+* Visualization
+
+  * Tableau
+
+## Key Results Summary
+
+* **T-Test:** `t ≈ -3.297`, `p ≈ 0.001` → Statistically significant difference in ratings between discounted and non-discounted products.
+* **ANOVA:** Significant differences across price tiers —** ***Premium* and** ***Mid-Range* outperform others.
+* **Optimal Discount Range:** *0–40%* yields highest ratings and engagement.
+* **Revenue Distribution:** *Premium* products represent ~7% of listings but generate ~46% of revenue.
+
+Full interpretation available in:
+📄[`Insights.md`](pricing_insights.md)

@@ -2,7 +2,7 @@
 
 ### Objective
 
-The goal of this analysis is to evaluate how discountstrategirs influence pricing tiers, customer ratings, and overall sales performance. By comparing the discounted vs. non-discounted products and analyzing differences across pricing tiers, we aim to identify which strategy maximizes customer satisfaction and perceived value.
+The goal of this analysis is to evaluate how discount strategies influence pricing tiers, customer ratings, and overall sales performance. By comparing the discounted vs. non-discounted products and analyzing differences across pricing tiers, we aim to identify which strategy maximizes customer satisfaction and perceived value.
 
 ### Data Overview
 
@@ -11,7 +11,7 @@ The goal of this analysis is to evaluate how discountstrategirs influence pricin
 - **Total Products:** 1,351
 - **Total Revenue:** $828M
 - **Average Customer Rating:** 4.09/5.0
-- **Avergae Discount:** 46.7%
+- **Average Discount:** 46.7%
 - **Data Source:** Amazon product database (MySQL)
 
 #### Pricing Tiers
@@ -43,7 +43,7 @@ The dataset includes products across five pricing tiers:
 
 ### Key Findings
 
-#### 1. Oveall Market Overview
+#### 1. Overall Market Overview
 
 - **Total Revenue:** $828M
 - **Products Analyzed:** 1351
@@ -138,7 +138,7 @@ The top 10 revenue-generating products include:
 
 **Key Findings:**
 
-- Premimum products create more customer engagement
+- Premium products create more customer engagement
 - Higher customer investment leads to more motivated reviewers
 - Social proof effect: More reviews = more trust = more sales
 
@@ -146,7 +146,7 @@ The top 10 revenue-generating products include:
 
 ### Statistical Validation
 
-This section validates dashboard insights using statisitcal methods.
+This section validates dashboard insights using statistical methods.
 
 #### Correlation Analysis Results
 
@@ -176,7 +176,7 @@ This section validates dashboard insights using statisitcal methods.
 * **Interpretation** : Moderate positive correlation - HIGHLY significant
 * **Business Meeting:** Higher-priced products naturally generate more reviews
 
-**Log-scale analysis:** Pattern holds acriss all price ranges, not just extremes.
+**Log-scale analysis:** Pattern holds across all price ranges, not just extremes.
 
 **4. Comprehensive Correlation Matrix:**
 
@@ -331,7 +331,62 @@ Price-Rating correlation varies significantly by category:
 
  **Validation** : **SUPPORTED** - Dominance confirmed, but diversification recommended.
 
-### Strategic Recommendations
+### Methodology
+
+#### Statistical Analysis
+
+ **Tool** : Python 3.x with scipy, pandas, seaborn, matplotlib
+ **Notebooks** :  **`correlation_analysis.ipynb`,** `statistical_tests.ipynb`
+
+ **Analyses Performed** :
+
+ **1. Correlation Analysis** :
+
+* Pearson correlation coefficients
+* Statistical significance testing (p-values)
+* Correlation matrix visualization
+* Category-specific correlations
+
+ **2. Hypothesis Testing** :
+
+* Independent samples t-test (discounted vs non-discounted)
+* One-way ANOVA (ratings across tiers)
+* Post-hoc pairwise comparisons (Bonferroni correction)
+* Effect size calculations (Cohen's d, Eta-squared)
+
+ **3. Visualizations Generated** :
+
+* Scatter plots with trend lines
+* Correlation heatmaps
+* Distribution histograms
+* Box plots by tier
+* Density plots
+
+ **Statistical Significance Level** : α = 0.05
+
+### Data Visualization
+
+ **Tool** : Tableau Desktop
+ **Dashboard File** : `tableau_dashboard.twbx`
+
+ **Interactive Features** :
+
+* Price Tier filter (dropdown)
+* Click-to-filter (Revenue Distribution bars)
+* Hover tooltips with detailed information
+* Reference lines for averages
+* Color-coded by price tier
+
+ **Charts Created** :
+
+1. KPI summary cards (Revenue, Products, Rating, Discount)
+2. Revenue Distribution by Price Tiers (horizontal bar chart)
+3. Discount Effectiveness (bar chart with annotations)
+4. Price vs Rating Analysis (scatter plot with trend line)
+5. Category Performance (table with metrics)
+6. Top 10 Products (sortable table)
+
+### Recommendations
 
 #### 1. Expand Premium Tier Offerings
 
@@ -489,58 +544,3 @@ Price-Rating correlation varies significantly by category:
 * Organic marketing amplification
 
  **Investment** : Low (marketing execution only)
-
-### Methodology
-
-#### Statistical Analysis
-
- **Tool** : Python 3.x with scipy, pandas, seaborn, matplotlib
- **Notebooks** :  **`correlation_analysis.ipynb`,** `statistical_tests.ipynb`
-
- **Analyses Performed** :
-
- **1. Correlation Analysis** :
-
-* Pearson correlation coefficients
-* Statistical significance testing (p-values)
-* Correlation matrix visualization
-* Category-specific correlations
-
- **2. Hypothesis Testing** :
-
-* Independent samples t-test (discounted vs non-discounted)
-* One-way ANOVA (ratings across tiers)
-* Post-hoc pairwise comparisons (Bonferroni correction)
-* Effect size calculations (Cohen's d, Eta-squared)
-
- **3. Visualizations Generated** :
-
-* Scatter plots with trend lines
-* Correlation heatmaps
-* Distribution histograms
-* Box plots by tier
-* Density plots
-
- **Statistical Significance Level** : α = 0.05
-
-### Data Visualization
-
- **Tool** : Tableau Desktop
- **Dashboard File** : `tableau_dashboard.twbx`
-
- **Interactive Features** :
-
-* Price Tier filter (dropdown)
-* Click-to-filter (Revenue Distribution bars)
-* Hover tooltips with detailed information
-* Reference lines for averages
-* Color-coded by price tier
-
- **Charts Created** :
-
-1. KPI summary cards (Revenue, Products, Rating, Discount)
-2. Revenue Distribution by Price Tiers (horizontal bar chart)
-3. Discount Effectiveness (bar chart with annotations)
-4. Price vs Rating Analysis (scatter plot with trend line)
-5. Category Performance (table with metrics)
-6. Top 10 Products (sortable table)
