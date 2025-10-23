@@ -257,4 +257,4 @@ python3 project1_UI
 ## Related Projects 
 
 *  [**Project 2:Pricing & Discount Strategy Analysis**](https://github.com/bteze001/Amazon_sales_analytics/tree/main/project2) - Tableau visualization and statistical analysis
-* [**Project 3: Customer Review & Sentiment Analys**](**https://github.com/bteze001/Amazon_sales_analytics/tree/main/project3**) - NLP-based review analysis
+* [**Project 3: Customer Review & Sentiment Analysis**](https://github.com/bteze001/Amazon_sales_analytics/tree/main/project3) - NLP-based review analysis
