@@ -76,7 +76,7 @@ Full report: [`insights.md`](https://github.com/bteze001/Amazon_sales_analytics/
 
 ### Overview 
 
-Built an interactive Tableau dashboard analyzing ****pricing tiers** , **discount strategies,** **and their effect on **customer ratings** and **sa****les performance.** 
+Built an interactive Tableau dashboard analyzing **pricing tiers** , **discount strategies,** and their effect on **customer ratings** and **sales performance.** 
 
 ### **Highlights**
 
