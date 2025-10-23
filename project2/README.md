@@ -110,4 +110,4 @@ Data is extracted from a MySQL database named `amazonSales`, containing product-
 * **Revenue Distribution:** *Premium* products represent ~7% of listings but generate ~46% of revenue.
 
 Full interpretation available in:
-📄[`Insights.md`](insights.md)
+📄[`Insights.md`](../results/insights.md)
