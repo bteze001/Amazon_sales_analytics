@@ -1,4 +1,4 @@
-## Pricing and Discount Strategy Analysis - Insights Report
+## Pricing and Discount Strategy Analysis - Findings Report
 
 ### Objective
 
