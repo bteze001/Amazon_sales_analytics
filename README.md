@@ -107,4 +107,4 @@ Performed sentiment and aspect-based review analysis to understand ****customer 
 * **Delivery** and **durability** drive negative sentiment
 * **Ease of use** and **value for money** boost positive feedback
 
-Full report: [`insights.md`](https://github.com/bteze001/Amazon_sales_analytics/blob/main/project2/results/insights.md)
+Full report: [`insights.md`](https://github.com/bteze001/Amazon_sales_analytics/blob/main/project3/results/findings/insights.md)
