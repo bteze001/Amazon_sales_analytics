@@ -1,10 +1,10 @@
 # Amazon Sales Analytics
 
-Comprehensive data anlaytics protfolio analyzing 1000+ Amazon products through SQL, Python, Tableau, NLP, and Machine Learning.
+Comprehensive data analytics portfolio analyzing 1000+ Amazon products through SQL, Python, Tableau, NLP, and Machine Learning.
 
 ## Overview
 
-This portfolio demonstrates end-to-end data analytics skills through four interconnected projects analyzing Amazon product data:
+This portfolio demonstrates end-to-end data analytics skills through three interconnected projects analyzing Amazon product data:
 
 1. **SQL Analysis:** Product and category performance analysis
 2. **Tableau Dashbaord:** Interactive pricing and discount strategy visualization
@@ -34,11 +34,11 @@ Amazon_sales_analytics/
 
 **Focus:** SQL, Data Analysis, Business Intelligence
 
-#### Key Results 
+#### Key Results
 
 * Analyzed 1,000+ products using 50+ SQL queries
 * Identified Electronics as top performer (4.5 rating, 23% above average)
-* Discovered x "hidden gem" products representing $xxk opportunity
+* Discovered 2 "hidden gem" products representing $xxk opportunity
 * Generated 5 actionable business recommendations
 
 #### Technologies
@@ -74,9 +74,9 @@ Full report: [`insights.md`](https://github.com/bteze001/Amazon_sales_analytics/
 
 **Focus:** Tableau Dashboard, KPI Analysis, Satatistical Analysis, Data Visualization
 
-### Overview 
+### Overview
 
-Built an interactive Tableau dashboard analyzing **pricing tiers** , **discount strategies,** and their effect on **customer ratings** and **sales performance.** 
+Built an interactive Tableau dashboard analyzing **pricing tiers** , **discount strategies,** and their effect on **customer ratings** and **sales performance.**
 
 ### **Highlights**
 

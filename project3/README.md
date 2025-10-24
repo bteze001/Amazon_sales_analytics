@@ -19,7 +19,7 @@ A comprehensive Natural Language Processing (NLP) project that analyzes customer
 
 ## Overview
 
-This project performs multi-dimensional analysis of amazonn product reviews to extract actionalable insights about customer sentiment, product aspects, and emerging topics. The analysis combines traditional NLP techniques with sentiment analysis to provide a comprehensive understanding of customer feedback
+This project applies **Natural Language Processing (NLP)** techniques to analyze customer sentiment from Amazon product reviews. By combining sentiment analysis, topic modeling, and aspect-based extraction, we uncover the drivers of customer satisfaction and identify actionable improvement opportunities.
 
 ## Features
 
@@ -144,22 +144,16 @@ Execute the notebooks in sequential order for complete analysis:
    * Analyze mismatched predictions to understand model limitations
    * **Output** : `confusion_matrix.png `
 
-## Key Findings 
+## Key Findings
 
-#### Sentiment Analysis 
+#### Sentiment Analysis
 
 1. **Distribution Insights:**
 2. **Accuracy Validation:**
 3. **Review Length Patterns:**
 
-#### Topic Modeling 
+#### Topic Modeling
 
 - Succesfully identifies 5 distinct themes in customer feedback
 - Topic reveal common discussion points include product quality, shipping experience, value for money and customer service.
 - Each topic characterized by distinctive jeyword patterns
-
-#### Aspect-Based Insights
-
-- Different product aspects
-
-#### Validation Results

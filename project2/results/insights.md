@@ -184,9 +184,9 @@ This section validates dashboard insights using statistical methods.
 
  **Key Takeaways** :
 
-* Strongest correlation:** ****Price ↔ Review Count** (0.35) - Premium products drive engagement
-* Negative correlation:** ****Discount ↔ Rating** (-0.15) - Heavy discounts hurt perception
-* Weak correlation:** ****Rating ↔ Review Count** (0.12) - Popularity ≠ Quality
+* Strongest correlation: **Price ↔ Review Count** (0.35) - Premium products drive engagement
+* Negative correlation: **Discount ↔ Rating** (-0.15) - Heavy discounts hurt perception
+* Weak correlation: **Rating ↔ Review Count** (0.12) - Popularity ≠ Quality
 
 #### Hypothesis Testing Results
 
@@ -302,10 +302,10 @@ Price-Rating correlation varies significantly by category:
 
  **Statistical Evidence** :
 
-* ✅ ANOVA: Premium has significantly higher ratings (p<0.001)
-* ✅ Post-hoc: Premium significantly outperforms Budget (p=0.001)
-* ✅ Engagement: Premium generates more reviews (r=0.35, p<0.001)
-* ✅ Revenue data confirms 46% share
+* ANOVA: Premium has significantly higher ratings (p<0.001)
+* Post-hoc: Premium significantly outperforms Budget (p=0.001)
+* Engagement: Premium generates more reviews (r=0.35, p<0.001)
+* Revenue data confirms 46% share
 
  **Validation** : **STRONGLY SUPPORTED** - Multiple statistical tests confirm Premium tier superiority.
 
@@ -313,10 +313,10 @@ Price-Rating correlation varies significantly by category:
 
  **Statistical Evidence** :
 
-* ✅ Correlation: Discount% negatively correlates with rating (r=-0.15, p<0.05)
-* ✅ T-test: Discounted products have lower ratings (p=0.032)
-* ✅ Visual analysis: Clear rating decline with discount depth
-* ✅ Mean comparison: 4.15 (0-25%) vs 4.04 (60%+)
+* Correlation: Discount% negatively correlates with rating (r=-0.15, p<0.05)
+* T-test: Discounted products have lower ratings (p=0.032)
+* Visual analysis: Clear rating decline with discount depth
+* Mean comparison: 4.15 (0-25%) vs 4.04 (60%+)
 
  **Validation** : **STRONGLY SUPPORTED** - Optimal range is statistically confirmed.
 
@@ -324,10 +324,10 @@ Price-Rating correlation varies significantly by category:
 
  **Statistical Evidence** :
 
-* ✅ Category correlation: Electronics shows r=0.22 (p<0.01)
-* ✅ Consistent quality across price points
-* ✅ Revenue data confirms 92.2% share
-* ⚠️ Risk: Over-concentration in one category
+* Category correlation: Electronics shows r=0.22 (p<0.01)
+* Consistent quality across price points
+* Revenue data confirms 92.2% share
+* Risk: Over-concentration in one category
 
  **Validation** : **SUPPORTED** - Dominance confirmed, but diversification recommended.
 
@@ -390,7 +390,7 @@ Price-Rating correlation varies significantly by category:
 
 #### 1. Expand Premium Tier Offerings
 
- **Priority** : ⭐⭐⭐ HIGH
+ **Priority** : HIGH
 
  **Evidence** :
 
@@ -414,7 +414,7 @@ Price-Rating correlation varies significantly by category:
 
 #### 2. Optimize Discount Strategy
 
- **Priority** : ⭐⭐⭐ HIGH
+ **Priority** : HIGH
 
  **Evidence** :
 
@@ -439,7 +439,7 @@ Price-Rating correlation varies significantly by category:
 
 #### 3. Maintain Quality Perception Through Moderate Discounting
 
- **Priority** : ⭐⭐ MEDIUM
+ **Priority** : MEDIUM
 
  **Evidence** :
 
@@ -464,7 +464,7 @@ Price-Rating correlation varies significantly by category:
 
 #### 4. Diversify Beyond Electronics
 
- **Priority** : ⭐⭐ MEDIUM
+ **Priority** : MEDIUM
 
  **Evidence** :
 
@@ -490,7 +490,7 @@ Price-Rating correlation varies significantly by category:
 
 #### 5. Reevaluate Budget Tier Strategy
 
- **Priority** : ⭐⭐ MEDIUM
+ **Priority** : MEDIUM
 
  **Evidence** :
 
@@ -522,7 +522,7 @@ Price-Rating correlation varies significantly by category:
 
 #### 6. Leverage Premium Product Reviews in Marketing
 
- **Priority** : ⭐ LOW (but high ROI)
+ **Priority** : LOW (but high ROI)
 
  **Evidence** :
 
