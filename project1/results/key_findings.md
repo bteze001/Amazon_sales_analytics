@@ -211,14 +211,14 @@ Screenshots and data exports are available under:
 * `/results/data_summary_results/` – Summary statistics and completeness checks
 * `/results/category_analysis_results/` – Category breakdowns and performance tiers
 * `/results/product_performance_results/` – Individual product KPIs and rankings
-* `/results/rating_analysis_results/` – Distribution and correlation plots
+* `/results/rating_analysis_results/` – Rating distribution and correlation plots
 * `/results/comparative_analysis_results/` – Cross-category benchmarking visuals
 
 ---
 
 ## 8. Conclusion
 
-This comprehensive analysis of 1,351 Amazon products across 9 categories reveals that** ****Electronics dominates revenue ($679.5M)** while** ** **OfficeProducts leads in customer satisfaction (4.31 rating)** . The analysis identified:
+This comprehensive analysis of 1,351 Amazon products across 9 categories reveals that **Electronics** dominates revenue ($679.5M) while **OfficeProducts** leads in customer satisfaction (4.31 rating) . The analysis identified:
 
 * **$467 in hidden gem opportunities** through strategic visibility improvements
 * **3 critical quality issues** requiring immediate intervention
@@ -240,5 +240,5 @@ This comprehensive analysis of 1,351 Amazon products across 9 categories reveals
 
 * **`key_findings.md`** – This comprehensive report
 * **SQL scripts** – 6 modular query files for reproducibility
-* **Screenshots** – 16 result visualizations stored under `/results/`
+* **Screenshots** – SQL result visualizations stored under `/results/`
 * **Data exports** – CSV files for all major analyses

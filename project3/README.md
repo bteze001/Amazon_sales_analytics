@@ -156,4 +156,4 @@ Execute the notebooks in sequential order for complete analysis:
 
 - Succesfully identifies 5 distinct themes in customer feedback
 - Topic reveal common discussion points include product quality, shipping experience, value for money and customer service.
-- Each topic characterized by distinctive jeyword patterns
+- Each topic characterized by distinctive keyword patterns
