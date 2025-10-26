@@ -56,7 +56,7 @@ SELECT
     CONCAT('$', ROUND(discounted_price, 2)) as price,
     ROUND(discount_percentage, 1) as discount_percentage
 FROM products
-WHERE rating_count >= 50
+WHERE rating_count >= 100
 ORDER BY rating DESC, rating_count DESC
 LIMIT 10;
 

@@ -66,7 +66,7 @@ This shows a highly promotional market where nearly half of all sales rely on di
 
 **Statistical Validation** : ANOVA analysis (F=18.45, p<0.001) confirms that ratings differ significantly across price tiers, with Premium and Luxury showing statistically higher ratings than Budget tier.
 
-#### Discount Effectivness Analysis
+#### 3. Discount Effectivness Analysis
 
 | Discount Range    | Product Count | Avg. Rating | Key Observation                                                                |
 | ----------------- | ------------- | ----------- | ------------------------------------------------------------------------------ |
@@ -488,39 +488,7 @@ Price-Rating correlation varies significantly by category:
 
  **Investment** : High (new supplier relationships, marketing, inventory)
 
-#### 5. Reevaluate Budget Tier Strategy
-
- **Priority** : MEDIUM
-
- **Evidence** :
-
-* 53% of products → 8% revenue (highly inefficient)
-* No statistical difference from Economy tier (p=0.235)
-* Lowest ratings (4.04)
-
- **Action Plan** :** ** **Option A - Reduce Budget Inventory** :
-
-* Cut Budget from 53% to 35% of catalog (-18%)
-* Reallocate space to Premium tier
-
- **Option B - Improve Budget Margins** :
-
-* Negotiate better supplier pricing
-* Focus on private label Budget products (higher margins)
-
-**Option C - Hybrid Approach** (Recommended):
-
-* Reduce Budget SKU count by 30%
-* Keep only high-volume, profitable Budget items
-* Shift freed resources to Premium
-
- **Expected Impact** :
-
-* Inventory efficiency: +25%
-* Average selling price increase: +12%
-* Overall margin improvement: +8%
-
-#### 6. Leverage Premium Product Reviews in Marketing
+#### 5. Leverage Premium Product Reviews in Marketing
 
  **Priority** : LOW (but high ROI)
 
