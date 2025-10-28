@@ -63,7 +63,7 @@ The project consists of several SQL modules:
 **Key Findings:**
 
 1. **Electronics dominates** with $679.5M in estimated revenue (90.3% of top-3 total)
-2. **OfficeProducts** achieves the** **highest satisfaction** (4.31 avg. rating) despite only 2.3% market share
+2. **OfficeProducts** achieves the **highest satisfaction** (4.31 avg. rating) despite only 2.3% market share
 3. **Computers&Accessories** shows strong performance with the highest discount strategy (53.2% avg.)
 4. **Rating consistency** is strongest in OfficeProducts (σ=0.15), indicating predictable quality
 
